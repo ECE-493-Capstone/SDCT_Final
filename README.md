@@ -63,3 +63,12 @@ Follow these instructions to setup the SDCT Backend server
 # Limitations
 
 1. IP in SDCT is hardcoded to our backend server. This will need to be changed if you want to run your own server.
+
+# Known Bugs
+1. Empty Messages will be sent and saved but not shown
+2. Mp4 files will not play audio
+3. Can add non-GitHub users
+4. The whiteboard is capable of multiple users; however, it works best when only one user is drawing at a time.
+5. The App may cause duplicate messages to appear if the backend has been restarted. This can be resolved by restarting VS Code.
+6. The System will not delete the transferred code session files from participant machines.
+
