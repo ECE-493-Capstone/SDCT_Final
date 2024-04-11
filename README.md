@@ -37,7 +37,7 @@ Please refer here for any further questions: https://code.visualstudio.com/api/w
 # Backend
 
 ## Requirements
-1. This setup requires the previous installation of docker.
+1. This setup requires docker to be installed.
 2. This setup will attempt to install the npm dependencies (This may pose some problems)
 3. If using Manual this setup will require the previous installation of Nodejs and Sqlite3
 4. Port 8000 and 3000 are available for use.
