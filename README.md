@@ -35,6 +35,9 @@ Please refer here for any further questions: https://code.visualstudio.com/api/w
 1. Install vsce(https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
 2. Run 'vsce package'
 
+## User Guide
+Refer to the videos in the 'User_Guide' folder for a tutorial of all the functionalities.
+
 # Backend
 
 ## Requirements
