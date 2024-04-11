@@ -21,11 +21,12 @@ Please refer here for any further questions: https://code.visualstudio.com/api/w
 
 ## Setup without vsix
 1. Download this repository and go into the SDCT folder
-2. Run 'npm install'
-3. Run 'npm run compile'
-4. Copy SDCT/src/python into the out folder
-5. Run 'npm run install:all'
-6. Run the extension using the debugger
+2. npm install typescript -g
+3. Run 'npm install'
+4. Run 'npm run compile'
+5. Copy SDCT/src/python into the out folder
+6. Run 'npm run install:all'
+7. Run the extension using the debugger
 
 * If the `npm run compile` does not work please add `"skipLibCheck": true` to tsconfig.json `compilerOptions`
 
