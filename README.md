@@ -73,4 +73,5 @@ Follow these instructions to setup the SDCT Backend server. This is not required
 4. The whiteboard is capable of multiple users; however, it works best when only one user is drawing at a time.
 5. The App may cause duplicate messages to appear if the backend has been restarted. This can be resolved by restarting VS Code.
 6. The System will not delete the transferred code session files from participant machines.
+7. File Editing is limited by VSCode Api and will sometimes not be perfectly synced. This is best fixed by typing slowly.
 
