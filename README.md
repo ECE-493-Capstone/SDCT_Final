@@ -2,13 +2,13 @@
 1. Visual Studio Code is installed
 2. Nodejs is installed
 3. Python3 is installed
-  i. Required python modules (The extension will attempt to install them however may fail, this will affect the capability of VoiceChat):
+   Required python modules (The extension will attempt to install them however may fail, this will affect the capability of VoiceChat):
     `pyaudio
     python-socketio
     pygame
     setuptools
     requests `
-4. Ipv6 Connectivity
+4. IPv6 Connectivity
 
 # Frontend
 
@@ -62,4 +62,4 @@ Follow these instructions to setup the SDCT Backend server
 
 # Limitations
 
-1. Ip in SDCT is hardcoded to our backend server. This will need to be changed if you want to run your own server.
+1. IP in SDCT is hardcoded to our backend server. This will need to be changed if you want to run your own server.
