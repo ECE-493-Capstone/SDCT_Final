@@ -1,4 +1,39 @@
-# Setup
+# Requirements
+1. Visual Studio Code is installed
+2. Nodejs is installed
+3. Python3 is installed
+  i. Required python modules. (The extension will attempt to install them however may fail, this will affect the capability of VoiceChat)
+    pyaudio
+    python-socketio
+    pygame
+    setuptools
+    requests 
+
+# Frontend
+
+## Setup with vsix
+1. Go to the Extensions view.
+2. Click Views and More Actions...
+3. Select Install from VSIX...
+
+Please refer here for any further questions: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions
+
+## Setup without vsix
+1. Download this repository and go into the SDCT folder
+2. Run 'npm install'
+3. Run 'npm run compile'
+4. Copy SDCT/src/python into the out folder
+5. Run 'npm run install:all'
+6. Run the extension using the debugger
+
+* If the `npm run compile` does not work please add `"skipLibCheck": true` to tsconfig.json `compilerOptions`
+
+## To package extension as vsix
+1. Install vsce(https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)
+2. Run 'vsce package'
+
+# Backend
+## Setup
 Follow these instructions to setup the SDCT Backend server
 
 ### Using Docker
