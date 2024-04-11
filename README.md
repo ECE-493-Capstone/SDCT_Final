@@ -2,12 +2,13 @@
 1. Visual Studio Code is installed
 2. Nodejs is installed
 3. Python3 is installed
-  i. Required python modules. (The extension will attempt to install them however may fail, this will affect the capability of VoiceChat)
-    pyaudio
+  i. Required python modules (The extension will attempt to install them however may fail, this will affect the capability of VoiceChat):
+    `pyaudio
     python-socketio
     pygame
     setuptools
-    requests 
+    requests `
+4. Ipv6 Connectivity
 
 # Frontend
 
@@ -33,6 +34,13 @@ Please refer here for any further questions: https://code.visualstudio.com/api/w
 2. Run 'vsce package'
 
 # Backend
+
+## Requirements
+1. This setup requires the previous installation of docker.
+2. This setup will attempt to install the npm dependencies (This may pose some problems)
+3. If using Manual this setup will require the previous installation of Nodejs and Sqlite3
+4. Port 8000 and 3000 are available for use.
+
 ## Setup
 Follow these instructions to setup the SDCT Backend server
 
@@ -54,7 +62,4 @@ Follow these instructions to setup the SDCT Backend server
 
 # Limitations
 
-1. This setup requires the previous installation of docker.
-2. This setup will attempt to install the npm dependencies (This may pose some problems)
-3. If using Manual this setup will require the previous installation of Nodejs and Sqlite3
-4. Thi
+1. Ip in SDCT is hardcoded to our backend server. This will need to be changed if you want to run your own server.
