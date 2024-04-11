@@ -1,0 +1,146 @@
+{
+  "name": "sdct",
+  "publisher": "493-W24-Team11",
+  "displayName": "Software Development Collaboration Tool (SDCT)",
+  "description": "Communication tools for developers inside Visual Studio",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sdct.mockLogin",
+        "title": "MOCK USER LOGIN"
+      },
+      {
+        "command": "sdct.login",
+        "title": "SDCT: Login with GitHub"
+      },
+      {
+        "command": "sdct.logout",
+        "title": "SDCT: Logout"
+      },
+      {
+        "command": "sdct.searchChat",
+        "title": "SDCT: Search Chat",
+        "icon": "media/search.png"
+      },
+      {
+        "command": "sdct.manageAccount",
+        "title": "SDCT: Manage Account",
+        "icon": "media/setting.png"
+      },
+      {
+        "command": "sdct.openChatRoom",
+        "title": "SDCT: Open Chat"
+      },
+      {
+        "command": "sdct.openChatRoomMenu",
+        "title": "SDCT: Open Chat Menu"
+      },
+      {
+        "command": "sdct.openVoiceChat",
+        "title": "SDCT: Open Voice Chat"
+      },
+      {
+        "command": "sdct.openCodeSession",
+        "title": "SDCT: Open Code Session"
+      },
+      {
+        "command": "sdct.sendMedia",
+        "title": "SDCT: Send Media"
+      },
+      {
+        "command": "sdct.sendFile",
+        "title": "SDCT: Send File"
+      },
+      {
+        "command": "sdct.sendCodeMessage",
+        "title": "SDCT: Send Code Message"
+      },
+      {
+        "command": "sdct.openWhiteboard",
+        "title": "SDCT: Open Whiteboard"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "sdct-view-container",
+          "title": "SDCT",
+          "icon": "media/sadcat.png"
+        }
+      ]
+    },
+    "views": {
+      "sdct-view-container": [
+        {
+          "id": "chatList",
+          "name": "Chat List"
+        },
+        {
+          "id": "profile",
+          "name": "Profile"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "chatList",
+        "contents": "[Login with GitHub](command:sdct.login)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "sdct.searchChat",
+          "when": "view == chatList",
+          "group": "navigation"
+        },
+        {
+          "command": "sdct.manageAccount",
+          "when": "view == profile",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "install:all": "npm install && npm run install:python && cd webview-ui && npm install && npm run build",
+    "install:python": "cd out/python && python3 -m pip install -U -r requirements.txt",
+    "start:webview": "cd webview-ui && npm run start",
+    "build:webview": "cd webview-ui && npm run build",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test",
+    "coverage": "c8 --check-coverage npm run test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9",
+    "c8": "^9.1.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "@types/tar": "^6.1.12",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "tar": "^6.2.1"
+  }
+}

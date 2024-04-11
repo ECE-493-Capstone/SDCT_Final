@@ -1,0 +1,39 @@
+main {
+  height: 100%;
+}
+
+.chatForm {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.menuButton {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.chatInput {
+  width: 400px;
+}
+
+.chatContent {
+  padding-bottom: 50px;
+}
+
+.whiteboardToolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.whiteboardTextInput {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+}

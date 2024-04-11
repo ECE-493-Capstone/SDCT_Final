@@ -1,0 +1,1 @@
+[ ! -e sdct.db ] && sqlite3 sdct.db < db_schema.sql
