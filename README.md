@@ -16,6 +16,7 @@
 1. Go to the Extensions view.
 2. Click Views and More Actions...
 3. Select Install from VSIX...
+4. Select the vsix in the SDCT folder
 
 Please refer here for any further questions: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions
 
