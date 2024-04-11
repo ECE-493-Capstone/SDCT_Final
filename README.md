@@ -39,11 +39,11 @@ Please refer here for any further questions: https://code.visualstudio.com/api/w
 ## Requirements
 1. This setup requires docker to be installed.
 2. This setup will attempt to install the npm dependencies (This may pose some problems)
-3. If using Manual this setup will require the previous installation of Nodejs and Sqlite3
+3. If using Manual setup it will require the previous installation of Nodejs and Sqlite3
 4. Port 8000 and 3000 are available for use.
 
 ## Setup
-Follow these instructions to setup the SDCT Backend server
+Follow these instructions to setup the SDCT Backend server. This is not required as there is already a instance running.
 
 ### Using Docker
 1. Download this repository and go into the SDCT_Backend folder
